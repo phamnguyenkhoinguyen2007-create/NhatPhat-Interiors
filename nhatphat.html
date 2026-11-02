@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Ty TNHH Nội Thất Nhật Phát | Cửa Nhôm Xingfa, Hệ 700, Tủ Quần Áo Âm Tường, Bàn Ghế Cao Cấp</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Công ty TNHH Nội Thất Nhật Phát - Kiến tạo không gian sống lý tưởng. Chuyên thiết kế và thi công Cửa nhôm Xingfa, Cửa nhôm hệ 700, Tủ quần áo âm tường, Bàn ghế, Nội thất cao cấp tại 291 Trần Hưng Đạo, Đông Hòa, TP. Hồ Chí Minh.">
+    <meta name="keywords" content="Nội Thất Nhật Phát, cửa nhôm Xingfa, cửa nhôm hệ 700, tủ quần áo âm tường, bàn ghế nội thất, 291 Trần Hưng Đạo Đông Hòa, nội thất cao cấp">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display cho phong cách sang trọng -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS qua CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        cursive: ['"Great Vibes"', 'cursive']
+                    },
+                    colors: {
+                        nhatphat: {
+                            50: '#fdf9f4',
+                            100: '#f9f0e4',
+                            200: '#f1dec8',
+                            300: '#e5c4a1',
+                            400: '#d5a374',
+                            500: '#b87c46', // Bronze vàng đồng
+                            600: '#945c32',
+                            700: '#754427', // Nâu cà phê sang trọng theo chủ đề
+                            800: '#5c351f', // Nâu đậm logo NP
+                            900: '#3f2314',
+                            gold: '#c59b27',
+                            lightgold: '#e9d59e',
+                            cream: '#fbf8f3'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome Icons 6.5.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Glassmorphism & custom effects */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        .card-hover {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px -10px rgba(92, 53, 31, 0.15);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #754427 0%, #b87c46 50%, #c59b27 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #b87c46, #c59b27, #e9d59e) 1;
+        }
+
+        /* Pulse Ring for phone */
+        .pulse-phone {
+            animation: pulse-ring 2s infinite;
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(184, 124, 70, 0.6); }
+            70% { box-shadow: 0 0 0 16px rgba(184, 124, 70, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(184, 124, 70, 0); }
+        }
+
+        .hero-pattern {
+            background-color: #fbf8f3;
+            background-image: radial-gradient(#e5c4a1 0.75px, transparent 0.75px), radial-gradient(#e5c4a1 0.75px, #fbf8f3 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+
+        /* Modal transition */
+        .modal-active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body class="bg-[#FCFAF8] text-gray-800 font-sans antialiased selection:bg-nhatphat-200 selection:text-nhatphat-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-nhatphat-900 via-nhatphat-800 to-nhatphat-700 text-nhatphat-100 text-xs sm:text-sm py-2 px-4 border-b border-nhatphat-600/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center text-nhatphat-lightgold font-medium">
+                    <i class="fa-solid fa-location-dot mr-1.5 text-nhatphat-gold"></i>
+                    291 Trần Hưng Đạo, Đông Hòa, TP. Hồ Chí Minh
+                </span>
+                <span class="hidden md:inline text-nhatphat-400">|</span>
+                <span class="hidden md:inline-flex items-center text-nhatphat-200">
+                    <i class="fa-solid fa-clock mr-1.5 text-nhatphat-gold"></i> Mở cửa: 07:30 - 18:30 hàng ngày
+                </span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:0988888888" class="font-semibold text-nhatphat-lightgold hover:text-white transition flex items-center">
+                    <i class="fa-solid fa-phone-volume mr-1.5 text-amber-400 animate-bounce"></i> Hotline: 0988 888 888
+                </a>
+                <span class="text-nhatphat-500">|</span>
+                <a href="https://zalo.me" target="_blank" class="hover:text-amber-300 font-semibold transition text-xs bg-nhatphat-700 px-2 py-0.5 rounded">
+                    <i class="fa-solid fa-comments mr-1"></i> Zalo Báo Giá
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="glass-nav sticky top-0 z-50 border-b border-nhatphat-200/60 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <!-- Brand Logo matching image identity -->
+            <a href="#trang-chu" class="flex items-center space-x-3 group py-1">
+                <div class="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-nhatphat-100 to-nhatphat-200 border border-nhatphat-300 flex items-center justify-center p-1.5 shadow-sm group-hover:scale-105 transition-all">
+                    <!-- SVG Logo phong cách chủ đề hình ảnh NP và mái nhà -->
+                    <svg viewBox="0 0 100 100" class="w-full h-full text-nhatphat-800" fill="currentColor">
+                        <!-- Mái nhà -->
+                        <path d="M50 10 L88 40 L82 45 L50 20 L18 45 L12 40 Z" fill="#5c351f" />
+                        <!-- Cửa sổ áp mái 4 ô -->
+                        <rect x="44" y="24" width="5" height="5" fill="#5c351f" rx="0.5"/>
+                        <rect x="51" y="24" width="5" height="5" fill="#5c351f" rx="0.5"/>
+                        <rect x="44" y="31" width="5" height="5" fill="#5c351f" rx="0.5"/>
+                        <rect x="51" y="31" width="5" height="5" fill="#5c351f" rx="0.5"/>
+                        <!-- Đèn thả chùm -->
+                        <line x1="72" y1="36" x2="72" y2="48" stroke="#5c351f" stroke-width="1.5" />
+                        <path d="M68 48 C68 44 76 44 76 48 Z" fill="#c59b27" />
+                        <!-- Chữ N P lồng cách điệu -->
+                        <text x="20" y="76" font-family="'Playfair Display', serif" font-size="44" font-weight="bold" fill="#5c351f">N</text>
+                        <text x="44" y="76" font-family="'Playfair Display', serif" font-size="44" font-weight="bold" fill="#754427">P</text>
+                        <!-- Dải sofa nhỏ -->
+                        <rect x="52" y="78" width="34" height="12" rx="3" fill="#b87c46" opacity="0.9" />
+                        <rect x="55" y="73" width="28" height="7" rx="2" fill="#754427" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1.5">
+                        <span class="text-xl sm:text-2xl font-black tracking-wide text-nhatphat-900 uppercase font-serif">Nhật Phát</span>
+                        <span class="text-xs bg-nhatphat-100 text-nhatphat-700 font-bold px-1.5 py-0.5 rounded border border-nhatphat-200">TNHH</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-[11px] font-bold tracking-widest text-nhatphat-600 uppercase">Nội Thất & Nhôm Kính</span>
+                        <span class="text-[10px] text-gray-400">|</span>
+                        <span class="text-[11px] text-nhatphat-500 font-medium italic hidden sm:inline">Kiến tạo không gian</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden lg:flex items-center space-x-7 font-medium text-sm">
+                <a href="#trang-chu" class="text-nhatphat-700 font-semibold hover:text-nhatphat-900 border-b-2 border-nhatphat-600 pb-1 transition">Trang chủ</a>
+                <a href="#gioi-thieu" class="text-gray-600 hover:text-nhatphat-700 transition">Giới thiệu</a>
+                
+                <!-- Dropdown Sản phẩm -->
+                <div class="relative group">
+                    <a href="#san-pham" class="text-gray-600 hover:text-nhatphat-700 transition flex items-center space-x-1 py-2">
+                        <span>Sản phẩm</span>
+                        <i class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-300"></i>
+                    </a>
+                    <div class="absolute left-0 mt-1 w-64 bg-white rounded-xl shadow-xl border border-nhatphat-100 py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+                        <a href="#san-pham" onclick="filterProducts('xingfa')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nhatphat-50 hover:text-nhatphat-800 font-medium">
+                            <i class="fa-solid fa-door-open mr-2 text-nhatphat-500"></i> Cửa Nhôm Xingfa
+                        </a>
+                        <a href="#san-pham" onclick="filterProducts('he700')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nhatphat-50 hover:text-nhatphat-800 font-medium">
+                            <i class="fa-solid fa-border-all mr-2 text-nhatphat-500"></i> Cửa Nhôm Hệ 700
+                        </a>
+                        <a href="#san-pham" onclick="filterProducts('tu-ao')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nhatphat-50 hover:text-nhatphat-800 font-medium">
+                            <i class="fa-solid fa-warehouse mr-2 text-nhatphat-500"></i> Tủ Quần Áo Âm Tường
+                        </a>
+                        <a href="#san-pham" onclick="filterProducts('ban-ghe')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nhatphat-50 hover:text-nhatphat-800 font-medium">
+                            <i class="fa-solid fa-chair mr-2 text-nhatphat-500"></i> Bàn Ghế Cao Cấp
+                        </a>
+                        <a href="#san-pham" onclick="filterProducts('cao-cap')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nhatphat-50 hover:text-nhatphat-800 font-medium">
+                            <i class="fa-solid fa-couch mr-2 text-nhatphat-500"></i> Các Loại Nội Thất Cao Cấp
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#cong-dung" class="text-gray-600 hover:text-nhatphat-700 transition">Công dụng & Ưu điểm</a>
+                <a href="#du-toan" class="text-gray-600 hover:text-nhatphat-700 transition">Bảng tính dự toán</a>
+                <a href="#lien-he" class="text-gray-600 hover:text-nhatphat-700 transition">Liên hệ</a>
+            </nav>
+
+            <!-- Actions Header -->
+            <div class="flex items-center space-x-3">
+                <a href="#lien-he" class="hidden sm:inline-flex items-center space-x-2 bg-gradient-to-r from-nhatphat-800 to-nhatphat-700 text-white px-5 py-2.5 rounded-xl font-semibold hover:from-nhatphat-900 hover:to-nhatphat-800 transition shadow-md shadow-nhatphat-900/20 active:scale-95 text-sm">
+                    <i class="fa-solid fa-file-invoice-dollar text-nhatphat-lightgold"></i>
+                    <span>Nhận Báo Giá Xưởng</span>
+                </a>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn" type="button" aria-label="Toggle menu" class="lg:hidden p-2.5 rounded-xl text-nhatphat-800 hover:bg-nhatphat-100 focus:outline-none transition">
+                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/98 border-b border-nhatphat-200 px-5 pt-4 pb-6 space-y-3 shadow-2xl backdrop-blur-md">
+            <a href="#trang-chu" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-nhatphat-800 bg-nhatphat-50">
+                <i class="fa-solid fa-house mr-2 text-nhatphat-600"></i> Trang chủ
+            </a>
+            <a href="#gioi-thieu" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:bg-nhatphat-50 hover:text-nhatphat-800">
+                <i class="fa-solid fa-building mr-2 text-nhatphat-600"></i> Giới thiệu công ty
+            </a>
+            <a href="#san-pham" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:bg-nhatphat-50 hover:text-nhatphat-800">
+                <i class="fa-solid fa-cubes mr-2 text-nhatphat-600"></i> Sản phẩm thi công
+            </a>
+            <a href="#cong-dung" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:bg-nhatphat-50 hover:text-nhatphat-800">
+                <i class="fa-solid fa-sparkles mr-2 text-nhatphat-600"></i> Công dụng từng món đồ
+            </a>
+            <a href="#du-toan" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:bg-nhatphat-50 hover:text-nhatphat-800">
+                <i class="fa-solid fa-calculator mr-2 text-nhatphat-600"></i> Dự toán trực tuyến
+            </a>
+            <a href="#lien-he" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:bg-nhatphat-50 hover:text-nhatphat-800">
+                <i class="fa-solid fa-location-dot mr-2 text-nhatphat-600"></i> Địa chỉ & Liên hệ
+            </a>
+            <div class="pt-3 border-t border-gray-100">
+                <a href="#lien-he" class="mobile-link w-full flex items-center justify-center space-x-2 bg-nhatphat-800 text-white px-4 py-3 rounded-xl font-bold shadow-md hover:bg-nhatphat-900 transition">
+                    <i class="fa-solid fa-paper-plane mr-2 text-nhatphat-lightgold"></i>
+                    <span>Tư Vấn Miễn Phí Tại Nhà</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO SECTION THEO CHỦ ĐỀ HÌNH ẢNH BANNER -->
+    <section id="trang-chu" class="hero-pattern py-14 sm:py-20 lg:py-24 relative overflow-hidden border-b border-nhatphat-200/50">
+        <!-- Glow trang trí nền -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-nhatphat-200/50 rounded-full filter blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-24 w-96 h-96 bg-nhatphat-300/40 rounded-full filter blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Cột nội dung trái -->
+            <div class="lg:col-span-7 space-y-6">
+                <!-- Badge phong cách sang trọng -->
+                <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-nhatphat-100 to-nhatphat-50 text-nhatphat-800 text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full border border-nhatphat-300/80 shadow-sm">
+                    <i class="fa-solid fa-crown text-nhatphat-gold"></i>
+                    <span class="tracking-wide">Kiến Tạo Không Gian Sống Lý Tưởng</span>
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold text-nhatphat-900 leading-[1.18] font-serif tracking-tight">
+                    CÔNG TY TNHH <br>
+                    <span class="gold-gradient-text uppercase">NỘI THẤT NHẬT PHÁT</span>
+                </h1>
+
+                <p class="font-cursive text-2xl sm:text-3xl text-nhatphat-700 tracking-wide font-normal -mt-2">
+                    "Kiến tạo không gian sống lý tưởng"
+                </p>
+
+                <p class="text-gray-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    Chuyên gia công, sản xuất và thi công hoàn thiện trọn gói các hạng mục: 
+                    <strong class="text-nhatphat-800">Cửa nhôm Xingfa nhập khẩu, Cửa nhôm hệ 700 kinh tế, Tủ quần áo âm tường hiện đại, Bàn ghế & các dòng nội thất cao cấp</strong>. Mang đến vẻ đẹp thanh lịch, bền vững vượt thời gian với giá xuất xưởng trực tiếp không qua trung gian.
+                </p>
+
+                <!-- Địa chỉ nổi bật -->
+                <div class="p-3.5 sm:p-4 rounded-2xl bg-white/90 border border-nhatphat-200 shadow-sm flex items-start space-x-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-nhatphat-100 text-nhatphat-800 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-map-location-dot text-lg"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold uppercase tracking-wider text-nhatphat-600">Trụ sở & Showroom:</div>
+                        <div class="text-sm sm:text-base font-bold text-gray-900">291 Trần Hưng Đạo, Đông Hòa, Thành Phố Hồ Chí Minh</div>
+                    </div>
+                </div>
+
+                <!-- Call to action buttons -->
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#san-pham" class="bg-gradient-to-r from-nhatphat-800 to-nhatphat-700 hover:from-nhatphat-900 hover:to-nhatphat-800 text-white px-7 py-3.5 rounded-xl font-bold transition shadow-lg shadow-nhatphat-900/25 flex items-center space-x-2">
+                        <span>Khám Phá Sản Phẩm</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#du-toan" class="border-2 border-nhatphat-700 text-nhatphat-800 hover:bg-nhatphat-100/70 px-6 py-3.5 rounded-xl font-bold transition flex items-center space-x-2 bg-white/70">
+                        <i class="fa-solid fa-calculator text-nhatphat-600"></i>
+                        <span>Tính Dự Toán Nhanh</span>
+                    </a>
+                </div>
+
+                <!-- Thống kê nhanh nổi bật -->
+                <div class="grid grid-cols-3 gap-4 sm:gap-6 pt-6 border-t border-nhatphat-200">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-nhatphat-800 font-serif">100%</div>
+                        <div class="text-xs sm:text-sm text-gray-500 font-medium">Nhôm & kính chính hãng</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-nhatphat-800 font-serif">Tại Xưởng</div>
+                        <div class="text-xs sm:text-sm text-gray-500 font-medium">Giá gốc không trung gian</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-nhatphat-800 font-serif">5 Năm</div>
+                        <div class="text-xs sm:text-sm text-gray-500 font-medium">Bảo hành dài hạn chu đáo</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột hình ảnh bên phải: Hiển thị bộ ảnh nhận diện thương hiệu chuẩn hình mẫu -->
+            <div class="lg:col-span-5 relative">
+                <!-- Khung viền đôi phong cách Luxury -->
+                <div class="relative mx-auto max-w-sm sm:max-w-md rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white group">
+                    <img 
+                        src="nhatphat_logo_banner.png" 
+                        alt="Nội Thất Nhật Phát - Kiến tạo không gian sống lý tưởng" 
+                        class="w-full h-auto object-cover max-h-[580px] group-hover:scale-102 transition duration-500"
+                        onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'"
+                    >
+                    <!-- Tag nổi góc dưới -->
+                    <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-nhatphat-200/80 flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-xl bg-nhatphat-800 text-nhatphat-100 flex items-center justify-center font-serif font-black text-lg">
+                                NP
+                            </div>
+                            <div>
+                                <p class="text-[11px] text-nhatphat-600 uppercase font-bold tracking-wider">Bộ nhận diện thương hiệu</p>
+                                <p class="text-sm font-bold text-gray-900">Nội Thất Nhật Phát</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <span class="inline-flex items-center text-xs font-bold text-nhatphat-800 bg-nhatphat-100 px-2.5 py-1 rounded-lg border border-nhatphat-300">
+                                <i class="fa-solid fa-shield-check text-nhatphat-gold mr-1"></i> Uy Tín
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: GIỚI THIỆU CÔNG TY TNHH NỘI THẤT NHẬT PHÁT -->
+    <section id="gioi-thieu" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hình ảnh thực tế xưởng sản xuất và không gian sống -->
+                <div class="lg:col-span-6 space-y-4">
+                    <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-nhatphat-100">
+                        <img 
+                            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80" 
+                            alt="Không gian thiết kế nội thất hiện đại của Nhật Phát" 
+                            class="w-full h-80 sm:h-96 object-cover hover:scale-105 transition duration-700"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6">
+                            <div class="text-white">
+                                <span class="bg-nhatphat-gold text-nhatphat-900 font-extrabold text-xs px-2.5 py-1 rounded">XƯỞNG SẢN XUẤT TRỰC TIẾP</span>
+                                <h3 class="text-xl font-bold mt-1.5">Máy móc CNC tự động & Đội ngũ thợ mộc, cơ khí nhôm kính lành nghề</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-2xl overflow-hidden shadow border border-gray-100 h-40">
+                            <img 
+                                src="https://images.unsplash.com/photo-1616486338812-3dADAe4b4ace?auto=format&fit=crop&w=600&q=80" 
+                                alt="Cửa nhôm kính cao cấp Nhật Phát" 
+                                class="w-full h-full object-cover hover:scale-110 transition duration-500"
+                            >
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow border border-gray-100 h-40">
+                            <img 
+                                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" 
+                                alt="Bàn ghế sofa cao cấp Nhật Phát" 
+                                class="w-full h-full object-cover hover:scale-110 transition duration-500"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lời giới thiệu doanh nghiệp -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-nhatphat-700 font-bold uppercase tracking-wider text-xs bg-nhatphat-100 px-3 py-1 rounded-full">
+                        <i class="fa-solid fa-award text-nhatphat-gold"></i>
+                        <span>Về chúng tôi</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 font-serif leading-snug">
+                        Tâm Huyết Kiến Tạo <br>
+                        <span class="gold-gradient-text">Không Gian Sống Hoàn Mỹ</span>
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed text-base">
+                        <strong>Công ty TNHH Nội Thất Nhật Phát</strong> tự hào là đối tác tin cậy hàng đầu tại <strong>Thành Phố Hồ Chí Minh</strong> và các tỉnh lân cận, chuyên cung cấp trọn gói từ khâu đo đạc, thiết kế 3D, sản xuất tại xưởng đến thi công lắp đặt hoàn thiện.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed text-base">
+                        Lấy triết lý <em>"Kiến tạo không gian sống lý tưởng"</em> làm kim chỉ nam, mỗi sản phẩm từ <strong>cửa nhôm Xingfa, cửa nhôm hệ 700, tủ quần áo âm tường kịch trần đến bàn ghế nội thất cao cấp</strong> đều được chăm chút tỉ mỉ từng mối ghép, đường keo, góc cạnh, cam kết độ bền trên 20 năm cùng tính thẩm mỹ thời thượng.
+                    </p>
+
+                    <!-- 4 Tiêu chí cốt lõi -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start space-x-3 p-3 rounded-xl bg-nhatphat-50/60 border border-nhatphat-100">
+                            <div class="w-8 h-8 rounded-lg bg-nhatphat-200 text-nhatphat-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Chất Lượng Vượt Trội</h4>
+                                <p class="text-xs text-gray-500 mt-0.5">Nhôm Xingfa nhập khẩu, phụ kiện đồng bộ Kinlong/Cmech.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3 p-3 rounded-xl bg-nhatphat-50/60 border border-nhatphat-100">
+                            <div class="w-8 h-8 rounded-lg bg-nhatphat-200 text-nhatphat-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-dollar-sign text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Giá Thành Tại Xưởng</h4>
+                                <p class="text-xs text-gray-500 mt-0.5">Tiết kiệm 15% - 25% so với các đơn vị thương mại trung gian.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3 p-3 rounded-xl bg-nhatphat-50/60 border border-nhatphat-100">
+                            <div class="w-8 h-8 rounded-lg bg-nhatphat-200 text-nhatphat-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-ruler-combined text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">May Đo Chuẩn Xác</h4>
+                                <p class="text-xs text-gray-500 mt-0.5">Kỹ thuật viên khảo sát đo đạc tận nơi miễn phí 100%.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3 p-3 rounded-xl bg-nhatphat-50/60 border border-nhatphat-100">
+                            <div class="w-8 h-8 rounded-lg bg-nhatphat-200 text-nhatphat-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-headset text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Bảo Hành Dài Lâu</h4>
+                                <p class="text-xs text-gray-500 mt-0.5">Bảo hành phụ kiện 2 - 5 năm, hỗ trợ kỹ thuật trọn đời.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nút hành động -->
+                    <div class="pt-2 flex items-center space-x-4">
+                        <a href="#lien-he" class="inline-flex items-center space-x-2 text-nhatphat-800 font-bold border-b-2 border-nhatphat-800 pb-1 hover:text-nhatphat-600 transition group">
+                            <span>Xem thông tin liên hệ và bản đồ chỉ đường</span>
+                            <i class="fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: DANH MỤC SẢN PHẨM & CÔNG DỤNG CHI TIẾT -->
+    <section id="san-pham" class="py-16 sm:py-24 bg-[#FAF7F2] border-t border-b border-nhatphat-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Tiêu đề mục -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-nhatphat-700 font-bold uppercase tracking-widest text-xs bg-nhatphat-100 px-3.5 py-1.5 rounded-full border border-nhatphat-200">
+                    Danh Mục Sản Phẩm Thế Mạnh
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-nhatphat-900 font-serif mt-3">
+                    Sản Phẩm Thi Công & Đồ Gỗ Nội Thất Cao Cấp
+                </h2>
+                <p class="text-gray-600 mt-3 text-base">
+                    Được gia công tỉ mỉ bằng vật liệu cao cấp, đáp ứng tối đa tiêu chuẩn cách âm, cách nhiệt, thẩm mỹ và công năng sử dụng cho từng không gian sống.
+                </p>
+
+                <!-- Bộ nút lọc danh mục sản phẩm (Tabs) -->
+                <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mt-8">
+                    <button onclick="filterProducts('all')" class="tab-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition shadow-sm bg-nhatphat-800 text-white" data-category="all">
+                        Tất Cả Sản Phẩm
+                    </button>
+                    <button onclick="filterProducts('xingfa')" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition shadow-sm bg-white text-gray-700 hover:bg-nhatphat-100" data-category="xingfa">
+                        Cửa Nhôm Xingfa
+                    </button>
+                    <button onclick="filterProducts('he700')" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition shadow-sm bg-white text-gray-700 hover:bg-nhatphat-100" data-category="he700">
+                        Cửa Nhôm Hệ 700
+                    </button>
+                    <button onclick="filterProducts('tu-ao')" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition shadow-sm bg-white text-gray-700 hover:bg-nhatphat-100" data-category="tu-ao">
+                        Tủ Quần Áo Âm Tường
+                    </button>
+                    <button onclick="filterProducts('ban-ghe')" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition shadow-sm bg-white text-gray-700 hover:bg-nhatphat-100" data-category="ban-ghe">
+                        Bàn Ghế Cao Cấp
+                    </button>
+                    <button onclick="filterProducts('cao-cap')" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition shadow-sm bg-white text-gray-700 hover:bg-nhatphat-100" data-category="cao-cap">
+                        Nội Thất Khác
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid Danh sách sản phẩm -->
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- SẢN PHẨM 1: CỬA NHÔM XINGFA 4 CÁNH -->
+                <div class="product-item bg-white rounded-2xl shadow-sm border border-nhatphat-200/80 overflow-hidden card-hover flex flex-col justify-between" data-category="xingfa">
+                    <div>
+                        <div class="relative overflow-hidden group h-56">
+                            <img 
+                                src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" 
+                                alt="Cửa nhôm Xingfa mở quay 4 cánh cao cấp" 
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                loading="lazy"
+                            >
+                            <span class="absolute top-3 left-3 bg-nhatphat-900/90 text-nhatphat-lightgold text-xs px-3 py-1 rounded-full font-bold shadow-md">
+                                <i class="fa-solid fa-door-open mr-1"></i> Cửa Nhôm Xingfa
+                            </span>
+                            <span class="absolute top-3 right-3 bg-amber-500 text-white text-[11px] px-2 py-0.5 rounded font-bold">
+                                Bán Chạy Nhất
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 font-serif">Cửa Đi Nhôm Xingfa 4 Cánh Mở Quay</h3>
+                            
+                            <!-- Công dụng tóm tắt -->
+                            <div class="mb-4">
+                                <span class="text-xs font-bold text-nhatphat-700 uppercase tracking-wide block mb-1">Công dụng chính:</span>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Giải pháp hoàn hảo làm cửa chính mặt tiền biệt thự, nhà phố, shophouse. Chống ồn vượt trội tới 95%, cách nhiệt hiệu quả và ngăn nước mưa tạt tuyệt đối nhờ hệ gioăng kép EPDM.
+                                </p>
+                            </div>
+
+                            <!-- Điểm nổi bật -->
+                            <ul class="text-xs text-gray-500 space-y-1.5 border-t border-gray-100 pt-3">
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Nhôm Xingfa hệ 55 tem đỏ chính hãng, dày 2.0mm</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Kính dán an toàn 8.38mm hoặc kính hộp cách âm</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Phụ kiện Kinlong / Cmech đồng bộ cao cấp</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-3 border-t border-nhatphat-100 flex items-center justify-between mt-auto bg-nhatphat-50/40">
+                        <div>
+                            <span class="text-[11px] text-gray-400 block">Giá sản xuất</span>
+                            <span class="text-sm font-bold text-nhatphat-800">Giá trực tiếp tại xưởng</span>
+                        </div>
+                        <button onclick="openModal('xingfa-4canh')" class="bg-nhatphat-800 hover:bg-nhatphat-900 text-white text-xs px-4 py-2.5 rounded-xl font-bold transition flex items-center space-x-1 shadow-sm">
+                            <span>Xem Công Dụng</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SẢN PHẨM 2: CỬA NHÔM XINGFA LÙA / XẾP TRƯỢT -->
+                <div class="product-item bg-white rounded-2xl shadow-sm border border-nhatphat-200/80 overflow-hidden card-hover flex flex-col justify-between" data-category="xingfa">
+                    <div>
+                        <div class="relative overflow-hidden group h-56">
+                            <img 
+                                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" 
+                                alt="Cửa lùa trượt nhôm Xingfa hệ 93 sang trọng" 
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                loading="lazy"
+                            >
+                            <span class="absolute top-3 left-3 bg-nhatphat-900/90 text-nhatphat-lightgold text-xs px-3 py-1 rounded-full font-bold shadow-md">
+                                <i class="fa-solid fa-door-open mr-1"></i> Cửa Nhôm Xingfa
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 font-serif">Cửa Lùa Trượt & Xếp Trượt Xingfa</h3>
+                            
+                            <div class="mb-4">
+                                <span class="text-xs font-bold text-nhatphat-700 uppercase tracking-wide block mb-1">Công dụng chính:</span>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Mở rộng tối đa 100% diện tích lối đi ra sân vườn, hồ bơi hoặc ban công. Trượt êm ái nhẹ nhàng không chiếm diện tích mở cánh, mang đến tầm nhìn panorama khoáng đạt.
+                                </p>
+                            </div>
+
+                            <ul class="text-xs text-gray-500 space-y-1.5 border-t border-gray-100 pt-3">
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Nhôm Xingfa hệ 93 dày 2.0mm cứng vững</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Bánh xe đôi inox chống rỉ trượt êm tuyệt đối</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Chịu áp lực gió giật cấp 12 an toàn tuyệt đối</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-3 border-t border-nhatphat-100 flex items-center justify-between mt-auto bg-nhatphat-50/40">
+                        <div>
+                            <span class="text-[11px] text-gray-400 block">May đo kích thước</span>
+                            <span class="text-sm font-bold text-nhatphat-800">Khảo sát tận nơi</span>
+                        </div>
+                        <button onclick="openModal('xingfa-lua')" class="bg-nhatphat-800 hover:bg-nhatphat-900 text-white text-xs px-4 py-2.5 rounded-xl font-bold transition flex items-center space-x-1 shadow-sm">
+                            <span>Xem Công Dụng</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SẢN PHẨM 3: CỬA NHÔM HỆ 700 CHO PHÒNG NGỦ & WC -->
+                <div class="product-item bg-white rounded-2xl shadow-sm border border-nhatphat-200/80 overflow-hidden card-hover flex flex-col justify-between" data-category="he700">
+                    <div>
+                        <div class="relative overflow-hidden group h-56">
+                            <img 
+                                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" 
+                                alt="Cửa nhôm hệ 700 cho phòng ngủ và nhà tắm WC" 
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                loading="lazy"
+                            >
+                            <span class="absolute top-3 left-3 bg-nhatphat-700 text-white text-xs px-3 py-1 rounded-full font-bold shadow-md">
+                                <i class="fa-solid fa-border-all mr-1"></i> Cửa Nhôm Hệ 700
+                            </span>
+                            <span class="absolute top-3 right-3 bg-emerald-600 text-white text-[11px] px-2 py-0.5 rounded font-bold">
+                                Tiết Kiệm Chi Phí
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 font-serif">Cửa Nhôm Hệ 700 Chống Nước Tuyệt Đối</h3>
+                            
+                            <div class="mb-4">
+                                <span class="text-xs font-bold text-nhatphat-700 uppercase tracking-wide block mb-1">Công dụng chính:</span>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Lựa chọn số 1 cho cửa phòng ngủ, cửa nhà vệ sinh (toilet), cửa phòng trọ, căn hộ cho thuê. Kháng nước 100%, không bao giờ mục nát hay mối mọt như cửa gỗ.
+                                </p>
+                            </div>
+
+                            <ul class="text-xs text-gray-500 space-y-1.5 border-t border-gray-100 pt-3">
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Bản khung 70mm chuẩn, sơn tĩnh điện bóng mịn</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Tùy chọn kính mờ, kính hoa văn hoặc pano nhôm bảo mật</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Trọng lượng nhẹ, đóng mở nhẹ nhàng, giá cực kỳ hợp lý</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-3 border-t border-nhatphat-100 flex items-center justify-between mt-auto bg-nhatphat-50/40">
+                        <div>
+                            <span class="text-[11px] text-gray-400 block">Bảo hành màu sơn</span>
+                            <span class="text-sm font-bold text-nhatphat-800">5 năm không rỉ sét</span>
+                        </div>
+                        <button onclick="openModal('nhom-he700')" class="bg-nhatphat-800 hover:bg-nhatphat-900 text-white text-xs px-4 py-2.5 rounded-xl font-bold transition flex items-center space-x-1 shadow-sm">
+                            <span>Xem Công Dụng</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SẢN PHẨM 4: TỦ QUẦN ÁO ÂM TƯỜNG CÁNH KÍNH / GỖ CAO CẤP -->
+                <div class="product-item bg-white rounded-2xl shadow-sm border border-nhatphat-200/80 overflow-hidden card-hover flex flex-col justify-between" data-category="tu-ao">
+                    <div>
+                        <div class="relative overflow-hidden group h-56">
+                            <img 
+                                src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=800&q=80" 
+                                alt="Tủ quần áo âm tường cánh kính kịch trần đèn LED sang trọng" 
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                loading="lazy"
+                            >
+                            <span class="absolute top-3 left-3 bg-nhatphat-900/90 text-nhatphat-lightgold text-xs px-3 py-1 rounded-full font-bold shadow-md">
+                                <i class="fa-solid fa-warehouse mr-1"></i> Tủ Quần Áo Âm Tường
+                            </span>
+                            <span class="absolute top-3 right-3 bg-amber-600 text-white text-[11px] px-2 py-0.5 rounded font-bold">
+                                Xu Hướng 2026
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 font-serif">Tủ Quần Áo Âm Tường Kịch Trần Cánh Kính</h3>
+                            
+                            <div class="mb-4">
+                                <span class="text-xs font-bold text-nhatphat-700 uppercase tracking-wide block mb-1">Công dụng chính:</span>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Tận dụng triệt để hốc tường và góc chết phòng ngủ, mở rộng diện tích tối đa. Lưu trữ khoa học từ quần áo, túi xách đắt tiền đến vali, chăn màn, biến căn phòng thành showroom sang trọng.
+                                </p>
+                            </div>
+
+                            <ul class="text-xs text-gray-500 space-y-1.5 border-t border-gray-100 pt-3">
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Kính cường lực màu trà / xám khói viền nhôm Anode xước</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Thùng gỗ MDF chống ẩm An Cường lõi xanh phủ Melamine</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Đèn LED cảm biến thông minh tự sáng khi mở cửa tủ</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-3 border-t border-nhatphat-100 flex items-center justify-between mt-auto bg-nhatphat-50/40">
+                        <div>
+                            <span class="text-[11px] text-gray-400 block">Thiết kế may đo</span>
+                            <span class="text-sm font-bold text-nhatphat-800">Miễn phí bản vẽ 3D</span>
+                        </div>
+                        <button onclick="openModal('tu-quan-ao')" class="bg-nhatphat-800 hover:bg-nhatphat-900 text-white text-xs px-4 py-2.5 rounded-xl font-bold transition flex items-center space-x-1 shadow-sm">
+                            <span>Xem Công Dụng</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SẢN PHẨM 5: BÀN GHẾ ĂN MẶT ĐÁ CERAMIC & SOFA PHÒNG KHÁCH -->
+                <div class="product-item bg-white rounded-2xl shadow-sm border border-nhatphat-200/80 overflow-hidden card-hover flex flex-col justify-between" data-category="ban-ghe">
+                    <div>
+                        <div class="relative overflow-hidden group h-56">
+                            <img 
+                                src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80" 
+                                alt="Bộ bàn ghế ăn mặt đá Ceramic và ghế bọc da cao cấp" 
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                loading="lazy"
+                            >
+                            <span class="absolute top-3 left-3 bg-nhatphat-900/90 text-nhatphat-lightgold text-xs px-3 py-1 rounded-full font-bold shadow-md">
+                                <i class="fa-solid fa-chair mr-1"></i> Bàn Ghế Cao Cấp
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 font-serif">Bộ Bàn Ăn Mặt Đá Ceramic & Ghế Da</h3>
+                            
+                            <div class="mb-4">
+                                <span class="text-xs font-bold text-nhatphat-700 uppercase tracking-wide block mb-1">Công dụng chính:</span>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Tâm điểm ấm cúng cho bữa cơm sum vầy gia đình. Mặt đá Ceramic chống ố, chống xước, chịu nhiệt đồ ăn nóng cực tốt; ghế nâng đỡ cột sống êm ái, bọc da Microfiber dễ lau chùi sạch sẽ.
+                                </p>
+                            </div>
+
+                            <ul class="text-xs text-gray-500 space-y-1.5 border-t border-gray-100 pt-3">
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Mặt đá phiến Ceramic nhập khẩu chống xước tuyệt đối</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Chân bàn thép carbon sơn tĩnh điện hoặc mạ PVD vàng đồng</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Ghế đệm mút D40 êm ái chống xẹp lún sau nhiều năm</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-3 border-t border-nhatphat-100 flex items-center justify-between mt-auto bg-nhatphat-50/40">
+                        <div>
+                            <span class="text-[11px] text-gray-400 block">Kích thước linh hoạt</span>
+                            <span class="text-sm font-bold text-nhatphat-800">4, 6, 8, 10 ghế</span>
+                        </div>
+                        <button onclick="openModal('ban-ghe-an')" class="bg-nhatphat-800 hover:bg-nhatphat-900 text-white text-xs px-4 py-2.5 rounded-xl font-bold transition flex items-center space-x-1 shadow-sm">
+                            <span>Xem Công Dụng</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SẢN PHẨM 6: NỘI THẤT CAO CẤP (TỦ BẾP HỢP KIM / SOFA LUXURY) -->
+                <div class="product-item bg-white rounded-2xl shadow-sm border border-nhatphat-200/80 overflow-hidden card-hover flex flex-col justify-between" data-category="cao-cap">
+                    <div>
+                        <div class="relative overflow-hidden group h-56">
+                            <img 
+                                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" 
+                                alt="Tủ bếp hợp kim nhôm cánh kính cường lực cao cấp" 
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                loading="lazy"
+                            >
+                            <span class="absolute top-3 left-3 bg-nhatphat-900/90 text-nhatphat-lightgold text-xs px-3 py-1 rounded-full font-bold shadow-md">
+                                <i class="fa-solid fa-couch mr-1"></i> Nội Thất Cao Cấp
+                            </span>
+                            <span class="absolute top-3 right-3 bg-purple-700 text-white text-[11px] px-2 py-0.5 rounded font-bold">
+                                Sang Trọng Bền Đẹp
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 font-serif">Tủ Bếp Hợp Kim Nhôm Cánh Kính Cao Cấp</h3>
+                            
+                            <div class="mb-4">
+                                <span class="text-xs font-bold text-nhatphat-700 uppercase tracking-wide block mb-1">Công dụng chính:</span>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Giải quyết triệt để nỗi ám ảnh mối mọt, cong vênh và ẩm mốc trong gian bếp. Bề mặt cánh kính sáng bóng như gương, chống cháy, chống bám dính dầu mỡ, lau chùi nhanh chóng.
+                                </p>
+                            </div>
+
+                            <ul class="text-xs text-gray-500 space-y-1.5 border-t border-gray-100 pt-3">
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Thùng hợp kim nhôm tổ ong siêu nhẹ, không rỉ sét vĩnh viễn</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Bản lề thủy lực giảm chấn đóng mở êm ru tuyệt đối</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-nhatphat-gold mr-2"></i> Tích hợp giá bát nâng hạ, giá xoong nồi thông minh</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-3 border-t border-nhatphat-100 flex items-center justify-between mt-auto bg-nhatphat-50/40">
+                        <div>
+                            <span class="text-[11px] text-gray-400 block">Độ bền vượt trội</span>
+                            <span class="text-sm font-bold text-nhatphat-800">Cam kết > 20 năm</span>
+                        </div>
+                        <button onclick="openModal('tu-bep-cao-cap')" class="bg-nhatphat-800 hover:bg-nhatphat-900 text-white text-xs px-4 py-2.5 rounded-xl font-bold transition flex items-center space-x-1 shadow-sm">
+                            <span>Xem Công Dụng</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: BẢNG TỔNG HỢP CÔNG DỤNG & TÍNH NĂNG CỦA TỪNG MÓN ĐỒ NỘI THẤT -->
+    <section id="cong-dung" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-nhatphat-700 font-bold uppercase tracking-wider text-xs bg-nhatphat-100 px-3.5 py-1.5 rounded-full border border-nhatphat-200">
+                    Phân Tích Chi Tiết
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 font-serif mt-3">
+                    Công Dụng Cụ Thể Của Từng Món Đồ Nội Thất
+                </h2>
+                <p class="text-gray-600 mt-2 text-base">
+                    Hiểu rõ công năng và ưu điểm giúp quý khách hàng dễ dàng đưa ra quyết định phù hợp nhất với nhu cầu sử dụng của gia đình và công trình.
+                </p>
+            </div>
+
+            <!-- Bảng so sánh và công dụng trực quan -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Box 1: Cửa nhôm Xingfa -->
+                <div class="bg-nhatphat-50/70 border border-nhatphat-200 rounded-2xl p-6 relative overflow-hidden group hover:border-nhatphat-500 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-nhatphat-800 text-nhatphat-lightgold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-nhatphat-900 font-serif mb-2">1. Cửa Nhôm Xingfa</h3>
+                    <p class="text-xs font-semibold text-nhatphat-600 mb-3">Vị trí: Cửa mặt tiền, cửa ban công, cửa sổ</p>
+                    <div class="space-y-2 text-sm text-gray-600 leading-relaxed">
+                        <p><strong class="text-gray-800">Công dụng bảo vệ:</strong> Chịu lực gió bão lên đến cấp 12, chống trộm cắp với hệ thống khóa đa điểm an toàn tuyệt đối.</p>
+                        <p><strong class="text-gray-800">Cách âm - Cách nhiệt:</strong> Giảm tiếng ồn đường phố tới 95%, giữ phòng điều hòa luôn mát mẻ, tiết kiệm điện năng tối đa.</p>
+                        <p><strong class="text-gray-800">Thẩm mỹ kiến trúc:</strong> Khung nhôm thanh thoát lấy trọn ánh sáng tự nhiên, mở rộng không gian sống sang trọng.</p>
+                    </div>
+                </div>
+
+                <!-- Box 2: Cửa nhôm hệ 700 -->
+                <div class="bg-nhatphat-50/70 border border-nhatphat-200 rounded-2xl p-6 relative overflow-hidden group hover:border-nhatphat-500 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-nhatphat-800 text-nhatphat-lightgold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-droplet-slash"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-nhatphat-900 font-serif mb-2">2. Cửa Nhôm Hệ 700</h3>
+                    <p class="text-xs font-semibold text-nhatphat-600 mb-3">Vị trí: Cửa phòng ngủ, phòng vệ sinh, phòng trọ, văn phòng</p>
+                    <div class="space-y-2 text-sm text-gray-600 leading-relaxed">
+                        <p><strong class="text-gray-800">Kháng nước 100%:</strong> Tuyệt đối không ẩm mốc, cong vênh, trương nở khi tiếp xúc thường xuyên với nước và hóa chất tẩy rửa.</p>
+                        <p><strong class="text-gray-800">Tối ưu chi phí:</strong> Giá thành tiết kiệm, phù hợp ngân sách hộ gia đình, dãy trọ, công trình nhà phố cho thuê.</p>
+                        <p><strong class="text-gray-800">Đóng mở êm ái:</strong> Khung bản nhôm 70mm gọn nhẹ, thao tác đẩy nhẹ nhàng, ít bị xệ cánh qua thời gian dài.</p>
+                    </div>
+                </div>
+
+                <!-- Box 3: Tủ quần áo âm tường -->
+                <div class="bg-nhatphat-50/70 border border-nhatphat-200 rounded-2xl p-6 relative overflow-hidden group hover:border-nhatphat-500 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-nhatphat-800 text-nhatphat-lightgold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-maximize"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-nhatphat-900 font-serif mb-2">3. Tủ Quần Áo Âm Tường</h3>
+                    <p class="text-xs font-semibold text-nhatphat-600 mb-3">Vị trí: Hốc tường phòng ngủ master, phòng thay đồ</p>
+                    <div class="space-y-2 text-sm text-gray-600 leading-relaxed">
+                        <p><strong class="text-gray-800">Giải phóng 100% diện tích:</strong> Khắc phục cột đà bê tông lồi lõm, tạo mặt phẳng tường liền mạch tăng gấp đôi cảm giác rộng rãi.</p>
+                        <p><strong class="text-gray-800">Phân chia khoa học:</strong> Ngăn treo áo dài, vest, hộc đồng hồ trang sức, ngăn kéo mã số bảo mật tài sản.</p>
+                        <p><strong class="text-gray-800">Khẳng định phong cách:</strong> Cánh kính phản chiếu ánh sáng sang trọng kết hợp đèn LED cảm ứng đổi màu khi bước vào.</p>
+                    </div>
+                </div>
+
+                <!-- Box 4: Bàn ghế cao cấp -->
+                <div class="bg-nhatphat-50/70 border border-nhatphat-200 rounded-2xl p-6 relative overflow-hidden group hover:border-nhatphat-500 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-nhatphat-800 text-nhatphat-lightgold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-nhatphat-900 font-serif mb-2">4. Bàn Ghế Ăn & Bàn Trà</h3>
+                    <p class="text-xs font-semibold text-nhatphat-600 mb-3">Vị trí: Phòng ăn gia đình, phòng khách đón tiếp đối tác</p>
+                    <div class="space-y-2 text-sm text-gray-600 leading-relaxed">
+                        <p><strong class="text-gray-800">Gắn kết gia đình:</strong> Nơi cả nhà quây quần bên mâm cơm ấm áp hoặc tiếp đón bạn bè thân thiết đầy trang trọng.</p>
+                        <p><strong class="text-gray-800">Mặt đá chống ố xước:</strong> Đặt nồi lẩu, đồ ăn nóng trực tiếp mà không lo nứt vỡ; dầu mỡ hay nước tương lau là sạch ngay.</p>
+                        <p><strong class="text-gray-800">Ghế ngồi nâng đỡ:</strong> Form ghế công thái học bảo vệ xương chậu và cột sống, ngồi lâu thoải mái không mỏi lưng.</p>
+                    </div>
+                </div>
+
+                <!-- Box 5: Tủ bếp nhôm kính & Giường ngủ -->
+                <div class="bg-nhatphat-50/70 border border-nhatphat-200 rounded-2xl p-6 relative overflow-hidden group hover:border-nhatphat-500 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-nhatphat-800 text-nhatphat-lightgold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-nhatphat-900 font-serif mb-2">5. Tủ Bếp Cánh Kính</h3>
+                    <p class="text-xs font-semibold text-nhatphat-600 mb-3">Vị trí: Khu vực nấu nướng, bếp ăn gia đình hiện đại</p>
+                    <div class="space-y-2 text-sm text-gray-600 leading-relaxed">
+                        <p><strong class="text-gray-800">Chống cháy & Bền vĩnh cửu:</strong> Không sợ lửa nhiệt độ cao, không sợ nước rò rỉ ngấm từ bồn rửa, vệ sinh trong tích tắc.</p>
+                        <p><strong class="text-gray-800">Tối ưu thao tác bếp:</strong> Bố trí chuẩn tam giác phong thủy (Bếp nấu - Bồn rửa - Tủ lạnh), giúp người nội trợ nấu ăn nhanh nhàn.</p>
+                        <p><strong class="text-gray-800">Thẩm mỹ bóng gương:</strong> Tạo chiều sâu và sự lộng lẫy cho căn nhà hiện đại.</p>
+                    </div>
+                </div>
+
+                <!-- Box 6: Sofa & Vách trang trí -->
+                <div class="bg-nhatphat-50/70 border border-nhatphat-200 rounded-2xl p-6 relative overflow-hidden group hover:border-nhatphat-500 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-nhatphat-800 text-nhatphat-lightgold flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-nhatphat-900 font-serif mb-2">6. Ghế Sofa & Vách Trang Trí</h3>
+                    <p class="text-xs font-semibold text-nhatphat-600 mb-3">Vị trí: Phòng khách trung tâm, khu vực sinh hoạt chung</p>
+                    <div class="space-y-2 text-sm text-gray-600 leading-relaxed">
+                        <p><strong class="text-gray-800">Thư giãn đỉnh cao:</strong> Đệm mút êm ái nâng niu cơ thể sau một ngày làm việc mệt mỏi, vừa xem phim vừa giải trí.</p>
+                        <p><strong class="text-gray-800">Bộ mặt gia chủ:</strong> Vách ốp lam sóng PVC vân đá tạo điểm nhấn bề thế, sang trọng mỗi khi khách quý ghé thăm nhà.</p>
+                        <p><strong class="text-gray-800">Ngăn cách thông minh:</strong> Tạo ranh giới giữa phòng khách và phòng bếp mà vẫn thông thoáng không bị bí bách.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CÔNG CỤ DỰ TOÁN CHI PHÍ TRỰC TUYẾN TIỆN LỢI -->
+    <section id="du-toan" class="py-16 sm:py-20 bg-gradient-to-br from-nhatphat-900 via-nhatphat-800 to-nhatphat-900 text-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-nhatphat-lightgold font-bold uppercase tracking-wider text-xs bg-white/10 px-3.5 py-1.5 rounded-full border border-white/20">
+                    Công Cụ Hữu Ích Cho Khách Hàng
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-serif mt-3">
+                    Tính Dự Toán Chi Phí Nhanh
+                </h2>
+                <p class="text-nhatphat-200 mt-2 text-sm">
+                    Chọn loại sản phẩm và nhập khối lượng dự kiến để hệ thống ước tính ngân sách tham khảo tại xưởng Nhật Phát.
+                </p>
+            </div>
+
+            <!-- Box Calculator -->
+            <div class="bg-white text-gray-900 rounded-3xl p-6 sm:p-10 shadow-2xl border border-nhatphat-400/30">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                    
+                    <!-- Lựa chọn sản phẩm -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">1. Chọn hạng mục cần thi công:</label>
+                        <select id="calc-item" onchange="calculateEstimate()" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-3 text-sm font-medium focus:ring-2 focus:ring-nhatphat-700 focus:outline-none">
+                            <option value="xingfa-cua-di" data-price="2150000" data-unit="m²">Cửa đi nhôm Xingfa (2.150.000 đ/m²)</option>
+                            <option value="xingfa-cua-so" data-price="1850000" data-unit="m²">Cửa sổ nhôm Xingfa (1.850.000 đ/m²)</option>
+                            <option value="nhom-he-700" data-price="1050000" data-unit="bộ">Cửa nhôm hệ 700 WC/Phòng (1.050.000 đ/bộ)</option>
+                            <option value="tu-am-tuong-kinh" data-price="2800000" data-unit="m²">Tủ quần áo âm tường cánh kính (2.800.000 đ/m²)</option>
+                            <option value="tu-am-tuong-mdf" data-price="1950000" data-unit="m²">Tủ quần áo âm tường MDF lõi xanh (1.950.000 đ/m²)</option>
+                            <option value="ban-an-ceramic" data-price="6500000" data-unit="bộ">Bộ bàn ăn Ceramic 6 ghế cao cấp (6.500.000 đ/bộ)</option>
+                            <option value="tu-bep-canh-kinh" data-price="3900000" data-unit="mét dài">Tủ bếp hợp kim cánh kính (3.900.000 đ/mét dài)</option>
+                        </select>
+                    </div>
+
+                    <!-- Nhập số lượng / diện tích -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">
+                            2. Khối lượng dự kiến (<span id="calc-unit-label" class="text-nhatphat-700 font-bold">m²</span>):
+                        </label>
+                        <div class="relative">
+                            <input 
+                                type="number" 
+                                id="calc-quantity" 
+                                value="10" 
+                                min="1" 
+                                max="1000" 
+                                oninput="calculateEstimate()" 
+                                class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-3 text-sm font-bold text-nhatphat-900 focus:ring-2 focus:ring-nhatphat-700 focus:outline-none"
+                            >
+                            <span id="calc-unit-badge" class="absolute right-4 top-3 text-xs font-semibold text-gray-400 uppercase">m²</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Kết quả ước tính -->
+                <div class="mt-8 pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4 bg-nhatphat-50/80 p-5 rounded-2xl">
+                    <div>
+                        <span class="text-xs text-gray-500 uppercase tracking-wide block font-semibold">Ước tính chi phí tham khảo:</span>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-nhatphat-800 font-serif" id="calc-total-result">
+                            21.500.000 đ
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1 italic">* Giá đã gồm đo đạc, công lắp ráp tận nơi tại TP.HCM</p>
+                    </div>
+
+                    <a href="#lien-he" onclick="applyEstimateToForm()" class="w-full sm:w-auto bg-gradient-to-r from-nhatphat-800 to-nhatphat-700 hover:from-nhatphat-900 hover:to-nhatphat-800 text-white px-6 py-3.5 rounded-xl font-bold transition shadow-md flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-file-signature text-nhatphat-lightgold"></i>
+                        <span>Giữ Báo Giá Này & Tư Vấn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: QUY TRÌNH THI CÔNG CHUYÊN NGHIỆP CỦA NHẬT PHÁT -->
+    <section class="py-16 sm:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-nhatphat-700 font-bold uppercase tracking-wider text-xs bg-nhatphat-100 px-3.5 py-1.5 rounded-full border border-nhatphat-200">
+                    Quy Trình Chuẩn
+                </span>
+                <h2 class="text-3xl font-extrabold text-gray-900 font-serif mt-3">
+                    4 Bước Thi Công Tinh Gọn & Chuẩn Xác
+                </h2>
+                <p class="text-gray-500 mt-2 text-sm">
+                    Đảm bảo tiến độ nhanh chóng, bàn giao đúng hẹn và kiểm soát chất lượng nghiêm ngặt từng công đoạn.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Bước 1 -->
+                <div class="text-center p-6 rounded-2xl bg-nhatphat-50/50 border border-nhatphat-100 relative group hover:bg-white hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-nhatphat-800 text-nhatphat-lightgold flex items-center justify-center text-2xl mb-4 font-bold font-serif group-hover:scale-110 transition">
+                        01
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Tư Vấn & Khảo Sát</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Kỹ sư đến tận công trình tại TP.HCM đo đạc bằng thước laser, tư vấn mẫu mã và chất liệu tối ưu.</p>
+                </div>
+
+                <!-- Bước 2 -->
+                <div class="text-center p-6 rounded-2xl bg-nhatphat-50/50 border border-nhatphat-100 relative group hover:bg-white hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-nhatphat-800 text-nhatphat-lightgold flex items-center justify-center text-2xl mb-4 font-bold font-serif group-hover:scale-110 transition">
+                        02
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Thiết Kế & Báo Giá</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Lên bản vẽ kỹ thuật chi tiết, báo giá minh bạch từng mét nhôm, kính và phụ kiện, không phát sinh.</p>
+                </div>
+
+                <!-- Bước 3 -->
+                <div class="text-center p-6 rounded-2xl bg-nhatphat-50/50 border border-nhatphat-100 relative group hover:bg-white hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-nhatphat-800 text-nhatphat-lightgold flex items-center justify-center text-2xl mb-4 font-bold font-serif group-hover:scale-110 transition">
+                        03
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Sản Xuất Tại Xưởng</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Cắt ghép bằng máy CNC 2 đầu chính xác 100%, dán keo ép góc kín khít, kiểm tra kĩ lưỡng trước khi xuất xưởng.</p>
+                </div>
+
+                <!-- Bước 4 -->
+                <div class="text-center p-6 rounded-2xl bg-nhatphat-50/50 border border-nhatphat-100 relative group hover:bg-white hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-nhatphat-800 text-nhatphat-lightgold flex items-center justify-center text-2xl mb-4 font-bold font-serif group-hover:scale-110 transition">
+                        04
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Lắp Đặt & Bàn Giao</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Lắp ráp gọn gàng sạch sẽ, nghiệm thu cùng khách hàng và kích hoạt bảo hành điện tử chính hãng dài hạn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: THÔNG TIN LIÊN HỆ & BẢN ĐỒ CHỈ ĐƯỜNG (291 TRẦN HƯNG ĐẠO, ĐÔNG HÒA, TP. HỒ CHÍ MINH) -->
+    <section id="lien-he" class="py-16 sm:py-24 bg-[#FAF7F2] border-t border-nhatphat-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Cột thông tin chi tiết công ty -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-nhatphat-700 font-bold uppercase tracking-wider text-xs bg-nhatphat-100 px-3.5 py-1.5 rounded-full border border-nhatphat-200">
+                            Liên Hệ Trực Tiếp
+                        </span>
+                        <h2 class="text-3xl font-extrabold text-gray-900 font-serif mt-3">
+                            Công Ty TNHH Nội Thất Nhật Phát
+                        </h2>
+                        <p class="text-gray-600 mt-2 text-sm leading-relaxed">
+                            Quý khách cần tư vấn lắp đặt cửa nhôm Xingfa, cửa nhôm hệ 700, tủ quần áo âm tường hoặc chọn mẫu bàn ghế cao cấp, hãy ghé thăm showroom hoặc liên hệ với chúng tôi:
+                        </p>
+                    </div>
+
+                    <!-- Các khối thông tin liên hệ chuẩn -->
+                    <div class="space-y-4">
+                        
+                        <!-- Địa chỉ yêu cầu cụ thể -->
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white border border-nhatphat-200/80 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-nhatphat-100 text-nhatphat-800 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-location-dot text-nhatphat-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-wider font-bold text-nhatphat-600">Địa chỉ trụ sở & Xưởng:</h4>
+                                <p class="text-gray-900 font-bold text-base mt-0.5">291 Trần Hưng Đạo, Đông Hòa, Thành Phố Hồ Chí Minh</p>
+                                <span class="text-xs text-gray-500 block mt-1">(Vị trí thuận tiện xe tải chở hàng và ô tô khách ghé xem mẫu)</span>
+                            </div>
+                        </div>
+
+                        <!-- Hotline / Điện thoại -->
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white border border-nhatphat-200/80 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-nhatphat-100 text-nhatphat-800 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-phone-volume text-nhatphat-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-wider font-bold text-nhatphat-600">Hotline tư vấn 24/7:</h4>
+                                <p class="text-nhatphat-800 font-extrabold text-lg mt-0.5">
+                                    <a href="tel:0988888888" class="hover:text-nhatphat-600 transition">0988 888 888</a>
+                                </p>
+                                <span class="text-xs text-emerald-600 font-medium"><i class="fa-solid fa-circle text-[8px] mr-1"></i> Đang hoạt động tiếp nhận cuộc gọi</span>
+                            </div>
+                        </div>
+
+                        <!-- Zalo & Email -->
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white border border-nhatphat-200/80 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-nhatphat-100 text-nhatphat-800 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-envelope-open-text text-nhatphat-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-wider font-bold text-nhatphat-600">Email & Hỗ trợ kỹ thuật:</h4>
+                                <p class="text-gray-900 font-semibold text-sm mt-0.5">noithatnhatphat.contact@gmail.com</p>
+                                <p class="text-xs text-gray-500 mt-1">Gửi bản vẽ kiến trúc nhận báo giá bóc tách trong 30 phút</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Bản đồ nhúng trực quan -->
+                    <div class="rounded-2xl overflow-hidden border border-nhatphat-300 shadow-md h-52 relative">
+                        <iframe 
+                            title="Bản đồ 291 Trần Hưng Đạo, Đông Hòa"
+                            src="https://maps.google.com/maps?q=291+Tr%E1%BA%A7n+H%C6%B0ng+%C4%90%E1%BA%A1o,+%C4%90%C3%B4ng+H%C3%B2a&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            class="w-full h-full border-0" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                        <a 
+                            href="https://www.google.com/maps/search/?api=1&query=291+Tr%E1%BA%A7n+H%C6%B0ng+%C4%90%E1%BA%A1o,+%C4%90%C3%B4ng+H%C3%B2a" 
+                            target="_blank" 
+                            class="absolute bottom-2 right-2 bg-white/95 text-xs text-nhatphat-800 font-bold px-3 py-1.5 rounded-lg shadow border border-gray-200 flex items-center space-x-1 hover:bg-nhatphat-50 transition"
+                        >
+                            <i class="fa-solid fa-diamond-turn-right text-nhatphat-gold"></i>
+                            <span>Mở chỉ đường Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cột Form gửi yêu cầu tư vấn / Báo giá -->
+                <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-nhatphat-200/80">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 font-serif">Đăng Ký Nhận Tư Vấn & Khảo Sát Miễn Phí</h3>
+                        <p class="text-gray-500 text-sm mt-1">Đội ngũ kỹ sư Nhật Phát sẽ liên hệ lại ngay trong 15 phút</p>
+                    </div>
+
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Họ và tên quý khách *</label>
+                                <input 
+                                    type="text" 
+                                    id="form-name" 
+                                    required 
+                                    placeholder="Ví dụ: Nguyễn Văn A" 
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-nhatphat-700 focus:outline-none bg-gray-50"
+                                >
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Số điện thoại / Zalo *</label>
+                                <input 
+                                    type="tel" 
+                                    id="form-phone" 
+                                    required 
+                                    placeholder="Ví dụ: 0912 345 678" 
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-nhatphat-700 focus:outline-none bg-gray-50"
+                                >
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Hạng mục quan tâm</label>
+                            <select id="form-product" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-nhatphat-700 focus:outline-none bg-gray-50 font-medium">
+                                <option value="Cửa nhôm Xingfa">Cửa nhôm Xingfa (Mở quay / Lùa xếp trượt)</option>
+                                <option value="Cửa nhôm hệ 700">Cửa nhôm hệ 700 (Cửa phòng / WC chống nước)</option>
+                                <option value="Tủ quần áo âm tường">Tủ quần áo âm tường (Cánh kính / Gỗ MDF An Cường)</option>
+                                <option value="Bàn ghế cao cấp">Bàn ghế cao cấp (Bàn ăn Ceramic / Bàn ghế sofa)</option>
+                                <option value="Thi công trọn gói nội thất">Thi công trọn gói nội thất nhà phố / Căn hộ</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Địa chỉ công trình khảo sát</label>
+                            <input 
+                                type="text" 
+                                id="form-address" 
+                                placeholder="Ví dụ: Quận 1, Quận 9, TP. Thủ Đức, Bình Dương..." 
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-nhatphat-700 focus:outline-none bg-gray-50"
+                            >
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Yêu cầu kích thước hoặc ghi chú thêm</label>
+                            <textarea 
+                                id="form-message" 
+                                rows="3" 
+                                placeholder="Ghi chú kích thước dự kiến, số lượng bộ cửa hoặc thời gian mong muốn khảo sát..." 
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-nhatphat-700 focus:outline-none bg-gray-50"
+                            ></textarea>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            class="w-full py-4 rounded-xl bg-gradient-to-r from-nhatphat-800 to-nhatphat-700 hover:from-nhatphat-900 hover:to-nhatphat-800 text-white font-bold text-base shadow-lg shadow-nhatphat-900/25 transition active:scale-[0.99] flex items-center justify-center space-x-2"
+                        >
+                            <i class="fa-solid fa-paper-plane text-nhatphat-lightgold"></i>
+                            <span>GỬI YÊU CẦU BÁO GIÁ NGAY</span>
+                        </button>
+                    </form>
+
+                    <!-- Alert gửi thành công ẩn sẵn -->
+                    <div id="form-success-alert" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-xl text-emerald-600"></i>
+                        <span class="text-sm font-semibold">Cảm ơn quý khách! Nhật Phát đã nhận thông tin và sẽ gọi lại trong ít phút.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CHUẨN THƯƠNG HIỆU NHẬT PHÁT -->
+    <footer class="bg-gradient-to-b from-nhatphat-900 to-[#2c170d] text-nhatphat-200 pt-16 pb-8 border-t border-nhatphat-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-nhatphat-800">
+                
+                <!-- Cột 1: Thông tin thương hiệu -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 rounded-xl bg-nhatphat-800 border border-nhatphat-600 flex items-center justify-center text-nhatphat-lightgold font-serif font-black text-xl">
+                            NP
+                        </div>
+                        <div>
+                            <span class="text-xl font-bold text-white uppercase tracking-wide font-serif">Nội Thất Nhật Phát</span>
+                            <p class="text-xs text-nhatphat-400 font-medium">Kiến tạo không gian sống lý tưởng</p>
+                        </div>
+                    </div>
+
+                    <p class="text-xs sm:text-sm text-nhatphat-300 leading-relaxed max-w-sm">
+                        Công ty TNHH Nội Thất Nhật Phát chuyên sản xuất cửa nhôm Xingfa, cửa nhôm hệ 700, tủ âm tường, bàn ghế cao cấp tại xưởng 291 Trần Hưng Đạo, Đông Hòa, TP. Hồ Chí Minh.
+                    </p>
+
+                    <div class="pt-2 flex items-center space-x-3 text-lg">
+                        <a href="#" class="w-9 h-9 rounded-lg bg-nhatphat-800 text-nhatphat-lightgold hover:bg-nhatphat-700 flex items-center justify-center transition"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-nhatphat-800 text-nhatphat-lightgold hover:bg-nhatphat-700 flex items-center justify-center transition"><i class="fa-brands fa-youtube text-sm"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-nhatphat-800 text-nhatphat-lightgold hover:bg-nhatphat-700 flex items-center justify-center transition"><i class="fa-brands fa-tiktok text-sm"></i></a>
+                        <a href="tel:0988888888" class="w-9 h-9 rounded-lg bg-nhatphat-800 text-nhatphat-lightgold hover:bg-nhatphat-700 flex items-center justify-center transition"><i class="fa-solid fa-phone text-sm"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cột 2: Sản phẩm chính -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-l-2 border-nhatphat-500 pl-2">Sản Phẩm</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-nhatphat-300">
+                        <li><a href="#san-pham" onclick="filterProducts('xingfa')" class="hover:text-white transition">Cửa nhôm Xingfa tem đỏ</a></li>
+                        <li><a href="#san-pham" onclick="filterProducts('he700')" class="hover:text-white transition">Cửa nhôm hệ 700 giá tốt</a></li>
+                        <li><a href="#san-pham" onclick="filterProducts('tu-ao')" class="hover:text-white transition">Tủ quần áo âm tường kịch trần</a></li>
+                        <li><a href="#san-pham" onclick="filterProducts('ban-ghe')" class="hover:text-white transition">Bàn ghế ăn Ceramic</a></li>
+                        <li><a href="#san-pham" onclick="filterProducts('cao-cap')" class="hover:text-white transition">Tủ bếp hợp kim cánh kính</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Dịch vụ & Hỗ trợ -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-l-2 border-nhatphat-500 pl-2">Dịch Vụ</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-nhatphat-300">
+                        <li><a href="#gioi-thieu" class="hover:text-white transition">Tư vấn thiết kế 3D</a></li>
+                        <li><a href="#lien-he" class="hover:text-white transition">Đo đạc khảo sát miễn phí</a></li>
+                        <li><a href="#du-toan" class="hover:text-white transition">Báo giá theo bản vẽ</a></li>
+                        <li><a href="#gioi-thieu" class="hover:text-white transition">Chính sách bảo hành 5 năm</a></li>
+                        <li><a href="#lien-he" class="hover:text-white transition">Bảo trì nhôm kính định kỳ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 4: Trụ sở văn phòng -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-l-2 border-nhatphat-500 pl-2">Địa Chỉ</h4>
+                    <p class="text-xs sm:text-sm text-nhatphat-300 leading-relaxed mb-2">
+                        <strong>291 Trần Hưng Đạo, Đông Hòa, Thành Phố Hồ Chí Minh</strong>
+                    </p>
+                    <p class="text-xs text-nhatphat-400 mb-1">Hotline: 0988 888 888</p>
+                    <p class="text-xs text-nhatphat-400">Giờ làm việc: 7:30 - 18:30</p>
+                </div>
+
+            </div>
+
+            <!-- Bản quyền -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-nhatphat-400 gap-3">
+                <p>© 2026 CÔNG TY TNHH NỘI THẤT NHẬT PHÁT. Tất cả quyền được bảo lưu.</p>
+                <p class="text-nhatphat-500">Thiết kế bởi Nhật Phát - "Kiến tạo không gian sống lý tưởng"</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POPUP MODAL XEM CHI TIẾT CÔNG DỤNG & THÔNG SỐ (INTERACTIVE QUICK VIEW) -->
+    <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-nhatphat-200 transform scale-95 transition-transform duration-300 relative" id="modal-container">
+            <!-- Nút đóng -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-gray-100 text-gray-500 hover:bg-nhatphat-100 hover:text-nhatphat-800 flex items-center justify-center transition z-10">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Nội dung Modal được nạp động qua JavaScript -->
+            <div id="modal-content" class="p-6 sm:p-8">
+                <!-- Nội dung động -->
+            </div>
+        </div>
+    </div>
+
+    <!-- NÚT GỌI ĐIỆN VÀ ZALO NỔI (FLOATING ACTION BUTTONS) -->
+    <div class="fixed bottom-6 right-5 z-40 flex flex-col space-y-3">
+        <!-- Nút cuộn lên đầu trang -->
+        <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="hidden w-11 h-11 rounded-full bg-white/90 text-nhatphat-800 shadow-md border border-gray-200 items-center justify-center hover:bg-nhatphat-100 transition">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <!-- Nút Zalo -->
+        <a href="https://zalo.me" target="_blank" class="w-13 h-13 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-lg hover:scale-110 transition duration-300 border-2 border-white p-3">
+            <span class="font-black text-xs">Zalo</span>
+        </a>
+
+        <!-- Nút Hotline Gọi Điện Thoại -->
+        <a href="tel:0988888888" class="pulse-phone w-13 h-13 rounded-full bg-gradient-to-r from-nhatphat-700 to-amber-600 text-white flex items-center justify-center shadow-xl hover:scale-110 transition duration-300 border-2 border-white p-3">
+            <i class="fa-solid fa-phone-volume text-xl animate-bounce"></i>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT XỬ LÝ TƯƠNG TÁC -->
+    <script>
+        // Dữ liệu chi tiết về công dụng của từng món đồ phục vụ cho Modal
+        const productDetails = {
+            'xingfa-4canh': {
+                title: 'Cửa Đi Nhôm Xingfa 4 Cánh Mở Quay',
+                category: 'Cửa Nhôm Xingfa Cao Cấp',
+                image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80',
+                usage: 'Lắp đặt vị trí cửa chính mặt tiền, cửa phòng khách hướng ra sân lớn hoặc ban công rộng tại các công trình biệt thự, nhà phố hiện đại.',
+                features: [
+                    '<strong>Cách âm & Cách nhiệt:</strong> Thanh nhôm profile Xingfa hệ 55 có cấu trúc khoang rỗng cùng các đường gân gia cường so le, kết hợp hệ gioăng cao su EPDM kín khít tuyệt đối giúp giảm đến 95% tiếng ồn xe cộ từ mặt đường.',
+                    '<strong>Chống nước & Kín khí:</strong> Thiết kế ống dẫn nước hướng ra ngoài ngăn nước mưa tràn ngược vào trong nhà kể cả trong bão giật.',
+                    '<strong>Độ an toàn cao:</strong> Phụ kiện khóa đa điểm đồng bộ Kinlong/Cmech và kính cường lực chịu va đập mạnh, chống đột nhập hiệu quả.',
+                    '<strong>Bề mặt bền màu:</strong> Sơn tĩnh điện theo tiêu chuẩn quốc tế AkzoNobel chống oxy hóa, chống bay màu dưới khí hậu nắng mưa nhiệt đới.'
+                ],
+                specs: 'Thanh profile nhôm Xingfa dày 2.0mm; Kính dán an toàn 8.38mm hoặc kính hộp 5-9-5mm; Màu sắc: Nâu cà phê, ghi xám, vân gỗ, trắng sứ.'
+            },
+            'xingfa-lua': {
+                title: 'Cửa Lùa Trượt & Xếp Trượt Nhôm Xingfa',
+                category: 'Cửa Nhôm Xingfa Cao Cấp',
+                image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80',
+                usage: 'Sử dụng cho cửa ban công, cửa hậu, vách ngăn phòng sinh hoạt chung ra sân vườn, bể bơi nơi cần tối ưu diện tích và góc nhìn thông thoáng.',
+                features: [
+                    '<strong>Tiết kiệm diện tích:</strong> Cánh trượt trên thanh ray êm ái, hoàn toàn không chiếm diện tích quay cửa phía trong hay phía ngoài phòng.',
+                    '<strong>Góc nhìn Panorama:</strong> Bản cánh lớn đón ánh sáng tự nhiên trọn vẹn, mở rộng tầm mắt nhìn ra phong cảnh sân vườn xanh mát.',
+                    '<strong>Vận hành siêu nhẹ:</strong> Hệ ray trượt bi kép inox chống rỉ sét giúp người lớn tuổi và trẻ nhỏ đều đẩy mở dễ dàng nhẹ nhàng.'
+                ],
+                specs: 'Nhôm Xingfa hệ 93/hệ 63 xếp trượt; Độ dày 2.0mm; Bánh xe chịu tải inox cao cấp.'
+            },
+            'nhom-he700': {
+                title: 'Cửa Nhôm Hệ 700 Chống Nước & Tiết Kiệm',
+                category: 'Cửa Nhôm Hệ 700',
+                image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
+                usage: 'Chuyên dụng làm cửa phòng ngủ gia đình, cửa phòng tắm, nhà vệ sinh (WC), cửa ngăn văn phòng hoặc các dự án phòng trọ, chung cư cho thuê.',
+                features: [
+                    '<strong>Chống nước tuyệt đối 100%:</strong> Không lo ẩm mốc, cong vênh, rỉ sét hay mục nát khi tiếp xúc liên tục với nước và hơi ẩm trong toilet.',
+                    '<strong>Kháng mối mọt vĩnh viễn:</strong> Giải pháp thay thế hoàn hảo cho cửa gỗ tự nhiên hay gỗ công nghiệp giá rẻ dễ bị mối ăn.',
+                    '<strong>Kinh tế & Dễ lắp đặt:</strong> Trọng lượng nhẹ, giảm tải trọng cho công trình, giá thành xuất xưởng cực kỳ hợp lý tiết kiệm ngân sách.'
+                ],
+                specs: 'Bản khung nhôm 70mm tiêu chuẩn; Kính mờ / Kính hoa văn 5mm hoặc Pano nhôm chống nhìn trộm.'
+            },
+            'tu-quan-ao': {
+                title: 'Tủ Quần Áo Âm Tường Kịch Trần Cánh Kính',
+                category: 'Tủ Quần Áo Âm Tường',
+                image: 'https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=800&q=80',
+                usage: 'Thiết kế giấu sâu vào các hốc tường phòng ngủ, phòng master nhằm tối ưu hóa 100% diện tích không gian và tạo phong cách sống đẳng cấp như khách sạn 5 sao.',
+                features: [
+                    '<strong>Tối ưu hóa không gian phòng:</strong> Loại bỏ các góc chết, góc cột bê tông xộc xệch, biến bức tường phòng ngủ trở nên phẳng phiu và vuông vức.',
+                    '<strong>Lưu trữ thông minh:</strong> Thiết kế phân khoang may đo theo thói quen: khu treo váy đầm dài, khu áo sơ mi, ngăn gấp đồ ngủ, hộc kéo chia ngăn phụ kiện đồng hồ cà vạt.',
+                    '<strong>Thẩm mỹ thời thượng:</strong> Cánh kính cường lực viền nhôm xước mờ sang trọng kết hợp dải đèn LED cảm ứng chuyển động tự động bật sáng khi mở cửa.'
+                ],
+                specs: 'Thùng gỗ MDF lõi xanh chống ẩm An Cường / Khung nhôm Anode cao cấp; Cánh kính cường lực 5mm màu xám khói hoặc trà.'
+            },
+            'ban-ghe-an': {
+                title: 'Bộ Bàn Ăn Mặt Đá Ceramic & Ghế Da Cao Cấp',
+                category: 'Bàn Ghế Nội Thất',
+                image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80',
+                usage: 'Đặt tại khu vực bàn ăn phòng bếp, là trung tâm giữ lửa ấm cúng của mỗi bữa cơm gia đình và thể hiện sự hiếu khách chu đáo của gia chủ.',
+                features: [
+                    '<strong>Mặt đá phiến Ceramic:</strong> Chịu nhiệt độ cực cao, chống trầy xước từ dao thìa muỗng, kháng ố nước chè, dầu mỡ, nước tương.',
+                    '<strong>Khung chân thép vững chãi:</strong> Sơn tĩnh điện công nghệ cao chống trầy xước, chịu tải trọng lớn, kiểu dáng chân chữ X, chữ U thanh lịch.',
+                    '<strong>Ghế da êm ái:</strong> Đệm mút nguyên khối đàn hồi cao bọc da PU hoặc da Microfiber mềm mại, ôm sát đường cong sống lưng giúp thư giãn tối đa.'
+                ],
+                specs: 'Kích thước bàn từ 1.4m - 2.4m; Tùy chọn 4 ghế, 6 ghế, 8 ghế đến 10 ghế; Chân sơn tĩnh điện hoặc mạ PVD.'
+            },
+            'tu-bep-cao-cap': {
+                title: 'Tủ Bếp Hợp Kim Cánh Kính Cao Cấp',
+                category: 'Nội Thất Cao Cấp',
+                image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
+                usage: 'Lắp đặt tại căn bếp gia đình, chung cư cao cấp và biệt thự, thay thế hoàn toàn tủ bếp gỗ truyền thống dễ ẩm mốc và mối mọt.',
+                features: [
+                    '<strong>Không sợ nước - Không sợ lửa:</strong> Thùng hợp kim nhôm tổ ong không ngấm nước, chống cháy lan, an toàn tuyệt đối.',
+                    '<strong>Dễ dàng vệ sinh lau chùi:</strong> Cánh kính phẳng trơn bóng, chỉ cần xịt nước lau kính là sạch bóng dầu mỡ thức ăn bám dính.',
+                    '<strong>Phụ kiện thông minh:</strong> Tích hợp trọn bộ giá nâng hạ bát đĩa, giá góc liên hoàn, ray trượt giảm chấn đóng mở không gây tiếng động.'
+                ],
+                specs: 'Thùng hợp kim nhôm tổ ong nhập khẩu; Cánh kính viền nhôm mạ Anode xước tinh tế; Bảo hành kết cấu lên tới 20 năm.'
+            }
+        };
+
+        // Hàm mở Modal xem công dụng chi tiết
+        function openModal(id) {
+            const data = productDetails[id];
+            if (!data) return;
+
+            const modal = document.getElementById('product-modal');
+            const container = document.getElementById('modal-container');
+            const content = document.getElementById('modal-content');
+
+            content.innerHTML = `
+                <div class="space-y-5">
+                    <div class="relative rounded-2xl overflow-hidden h-64 sm:h-72 border border-gray-100">
+                        <img src="${data.image}" alt="${data.title}" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-nhatphat-800 text-nhatphat-lightgold text-xs px-3 py-1 rounded-full font-bold shadow">
+                            ${data.category}
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-nhatphat-900 font-serif">${data.title}</h3>
+                        <p class="text-xs text-gray-400 mt-1">Được sản xuất tại xưởng: 291 Trần Hưng Đạo, Đông Hòa, TP.HCM</p>
+                    </div>
+
+                    <div class="p-3.5 rounded-xl bg-nhatphat-50 border border-nhatphat-200">
+                        <h4 class="text-xs font-bold uppercase text-nhatphat-700 tracking-wider mb-1">
+                            <i class="fa-solid fa-bullseye mr-1.5"></i> Vị trí & Công dụng ứng dụng:
+                        </h4>
+                        <p class="text-sm text-gray-700 leading-relaxed">${data.usage}</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold uppercase text-gray-800 tracking-wider mb-2">
+                            <i class="fa-solid fa-star text-nhatphat-gold mr-1"></i> Ưu điểm và công năng vượt trội:
+                        </h4>
+                        <ul class="space-y-2 text-xs sm:text-sm text-gray-600">
+                            ${data.features.map(f => `<li class="flex items-start"><i class="fa-solid fa-check text-nhatphat-gold mt-1 mr-2 shrink-0"></i><span>${f}</span></li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div class="pt-2 text-xs text-gray-500 border-t border-gray-100">
+                        <strong>Quy cách kỹ thuật:</strong> ${data.specs}
+                    </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <a href="#lien-he" onclick="selectFromModal('${data.title}')" class="flex-1 bg-gradient-to-r from-nhatphat-800 to-nhatphat-700 text-white font-bold py-3 px-4 rounded-xl text-center hover:from-nhatphat-900 hover:to-nhatphat-800 transition text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-paper-plane text-nhatphat-lightgold"></i>
+                            <span>Yêu Cầu Báo Giá Món Này</span>
+                        </a>
+                        <a href="tel:0988888888" class="sm:w-auto border-2 border-nhatphat-700 text-nhatphat-800 font-bold py-3 px-5 rounded-xl text-center hover:bg-nhatphat-50 transition text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Gọi Thợ Khảo Sát</span>
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.classList.add('opacity-100', 'pointer-events-auto');
+            container.classList.remove('scale-95');
+            container.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('product-modal');
+            const container = document.getElementById('modal-container');
+            modal.classList.remove('opacity-100', 'pointer-events-auto');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            container.classList.remove('scale-100');
+            container.classList.add('scale-95');
+            document.body.style.overflow = '';
+        }
+
+        // Đóng khi click ngoài modal
+        document.getElementById('product-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        // Hàm chọn sản phẩm từ modal đổ vào form
+        function selectFromModal(productName) {
+            closeModal();
+            const select = document.getElementById('form-product');
+            if (select) {
+                // Tìm option tương ứng hoặc ghi chú vào tin nhắn
+                document.getElementById('form-message').value = `Tôi quan tâm mẫu: ${productName}. Nhờ công ty Nhật Phát báo giá và tư vấn kích thước.`;
+            }
+        }
+
+        // Lọc sản phẩm theo tabs
+        function filterProducts(category) {
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-category') === category) {
+                    btn.classList.add('bg-nhatphat-800', 'text-white');
+                    btn.classList.remove('bg-white', 'text-gray-700');
+                } else {
+                    btn.classList.remove('bg-nhatphat-800', 'text-white');
+                    btn.classList.add('bg-white', 'text-gray-700');
+                }
+            });
+
+            const items = document.querySelectorAll('.product-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Tính dự toán chi phí trực tuyến
+        function calculateEstimate() {
+            const itemSelect = document.getElementById('calc-item');
+            const quantityInput = document.getElementById('calc-quantity');
+            const selectedOption = itemSelect.options[itemSelect.selectedIndex];
+            
+            const price = parseFloat(selectedOption.getAttribute('data-price')) || 0;
+            const unit = selectedOption.getAttribute('data-unit') || 'm²';
+            const quantity = parseFloat(quantityInput.value) || 0;
+
+            document.getElementById('calc-unit-label').innerText = unit;
+            document.getElementById('calc-unit-badge').innerText = unit;
+
+            const total = price * quantity;
+            document.getElementById('calc-total-result').innerText = total.toLocaleString('vi-VN') + ' đ';
+        }
+
+        function applyEstimateToForm() {
+            const itemSelect = document.getElementById('calc-item');
+            const quantityInput = document.getElementById('calc-quantity');
+            const selectedOption = itemSelect.options[itemSelect.selectedIndex];
+            const total = document.getElementById('calc-total-result').innerText;
+
+            const msg = `Tôi đã tính thử dự toán trên web: ${selectedOption.text} - Số lượng: ${quantityInput.value} ${selectedOption.getAttribute('data-unit')} (Khoảng ${total}). Vui lòng tư vấn chi tiết hơn.`;
+            document.getElementById('form-message').value = msg;
+        }
+
+        // Xử lý gửi Form liên hệ
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const btn = event.target.querySelector('button[type="submit"]');
+            btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin mr-2"></i> Đang gửi thông tin...`;
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.innerHTML = `<i class="fa-solid fa-check mr-2"></i> Đã gửi thành công!`;
+                btn.classList.remove('from-nhatphat-800', 'to-nhatphat-700');
+                btn.classList.add('bg-emerald-600');
+                document.getElementById('form-success-alert').classList.remove('hidden');
+                event.target.reset();
+            }, 1000);
+        }
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Tự động đóng mobile menu khi click link
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Nút Back to top
+        window.addEventListener('scroll', () => {
+            const btt = document.getElementById('back-to-top');
+            if (window.scrollY > 400) {
+                btt.classList.remove('hidden');
+                btt.classList.add('flex');
+            } else {
+                btt.classList.add('hidden');
+                btt.classList.remove('flex');
+            }
+        });
+
+        // Khởi chạy tính toán dự toán mặc định
+        calculateEstimate();
+    </script>
+</body>
+</html>
